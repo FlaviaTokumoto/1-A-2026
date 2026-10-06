@@ -25,7 +25,11 @@
             margin: 0 auto;
             border: 5px solid red;
             padding: 16px;
+        }
+        
+        article{
             display: flex;
+
         }
 
         img {
@@ -47,25 +51,42 @@
     </header>
 
     <main>
-        <img src="imagem-blog.png"
+        <article>
+
+            <img src="imagem-blog.png"
+                alt="Três jovens do clube de ciências observam o céu noturno estrelado ao lado de um telescópio. No topo da imagem, lê-se o título "
+                Clube de Ciências: Astronomia.">
+            <div class="artigo-autor">
+                <h2>Meu primeiro post.</h2>
+                <p>Sejam bem vindos ao site do Clube de Ciências do Colégio Branca da Mota Fernandes. Aqui irei postar
+                    os
+                    trabalhos dos estudantes que participam dos encontros.</p>
+                <p class="artigo-autor">Por: Flávia Henrique</p>
+                <button>❤️<span>0</span></button>
+                <button>🍓ྀི<span>0</span></button>
+            </div>
+        </article>
+        <article>
+
+            <img src="imagem-blog.png"
             alt="Três jovens do clube de ciências observam o céu noturno estrelado ao lado de um telescópio. No topo da imagem, lê-se o título "
             Clube de Ciências: Astronomia.">
-        <div class="artigo-autor">
-            <h2>Meu primeiro post.</h2>
-            <p>Sejam bem vindos ao site do Clube de Ciências do Colégio Branca da Mota Fernandes. Aqui irei postar os
-                trabalhos dos estudantes que participam dos encontros.</p>
-            <p class="artigo-autor">Por: Flávia Henrique</p>
-            <button>❤️<span>0</span></button>
-            <button>🍓ྀི<span>0</span></button>
-            
-        </div>
+            <div class="artigo-autor">
+                <h2>Meu primeiro post.</h2>
+                <p>Sejam bem vindos ao site do Clube de Ciências do Colégio Branca da Mota Fernandes. Aqui irei postar os
+                    trabalhos dos estudantes que participam dos encontros.</p>
+                    <p class="artigo-autor">Por: Flávia Henrique</p>
+                    <button>❤️<span>0</span></button>
+                    <button>🍓ྀི<span>0</span></button>
+                </div>
+            </article>
     </main>
 
 </body>
 
 <script>
-   const botoes = document.querySelectorAll("main button");
-   botoes.forEach(function (botao) {
+    const botoes = document.querySelectorAll("main button");
+    botoes.forEach(function (botao) {
         botao.addEventListener("click", botaoClicado);
 
         function botaoClicado() {
